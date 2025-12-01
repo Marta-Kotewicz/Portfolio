@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./assets/MK.png">
+  <title>Portfolio Marta Kotewicz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <!-- Nawigacja desktopowa -->
+  <nav id="desktop-nav">
+        <a href="index.html" id="logo-link">
+  <div id="logo"></div>
+</a>
+    <div class="right-side">
+      <ul class="nav-links">
+        <li><a href="proj.html">Grafika&nbsp;projektowa</a></li>
+        <li><a href="serigraphy.html">Serigrafia</a></li>
+        <li><a href="foto.html">Fotografia</a></li>
+        <li><a href="about.html">O&nbsp;mnie</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <div id="buttony">
+        <a href="serigraphy.html"><img src="./assets/button-pl.svg" alt="Polski" width="24" height="24"></a>
+        <a href="serigraphy-en.html"><img src="./assets/button-eng.svg" alt="English" width="24" height="24"></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Nawigacja mobilna -->
+  <nav id="hamburger-nav">
+        <a href="index.html" id="logo-link">
+  <div id="logo-hamburger"></div>
+</a>
+    <div class="hamburger-right-side">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="proj.html" onclick="toggleMenu()">Grafika&nbsp;projektowa</a></li>
+          <li><a href="serigraphy.html" onclick="toggleMenu()">Serigrafia</a></li>
+          <li><a href="foto.html" onclick="toggleMenu()">Fotografia</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">O&nbsp;mnie</a></li>
+          <li><a href="kontakt.html" onclick="toggleMenu()">Kontakt</a></li>
+        </ul>
+      </div>
+      <div id="buttony-hamburger">
+        <a href="serigraphy.html"><img src="./assets/button-pl.svg" alt="Polski" width="24" height="24"></a>
+        <a href="serigraphy-en.html"><img src="./assets/button-eng.svg" alt="English" width="24" height="24"></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Galerie -->
+  <section class="gallery-section">
+    <div class="gallery-box-pocztowki">
+    <div class="gallery-content-vertical">
+      <h2 class="gallery-title">Cykl serigrafii pt. "Rozdarcia"</h2>
+      <div class="gallery-wrapper-vertical">
+          <button class="prev">&#10094;</button>
+          <div class="gallery">
+          <div class="gallery-track">
+            <div class="slide"><img src="./assets/Mechanizm500.jpg" data-full="./assets/Mechanizm1200.jpg" alt=",,Mechanizm,, serigrafia, 200x210cm" data-gallery="rozdarcia"></div>
+            <div class="slide"><img src="./assets/Impuls500.jpg" data-full="./assets/Impuls1200.jpg" alt=",,Impuls,, serigrafia, 98x140cm" data-gallery="rozdarcia"></div>
+            <div class="slide"><img src="./assets/Uklad500.jpg" data-full="./assets/Uklad1200.jpg" alt=",,Układ,, serigrafia, 98x140cm" data-gallery="rozdarcia"></div>
+            <div class="slide"><img src="./assets/Granica500.jpg" data-full="./assets/Granica1200.jpg" alt=",,Granica,, serigrafia, 70x100cm" data-gallery="rozdarcia"></div>
+            <div class="slide"><img src="./assets/Rezygnacja500.jpg" data-full="./assets/Rezygnacja1200.jpg" alt=",,Rezygnacja,, serigrafia, 98x140cm" data-gallery="rozdarcia"></div>
+            <div class="slide"><img src="./assets/Opor500.jpg" data-full="./assets/Opor1200.jpg" alt=",,Opór,, serigrafia, 70x100cm" data-gallery="rozdarcia"></div>
+            <div class="slide"><img src="./assets/Zanikanie500.jpg" data-full="./assets/Zanikanie1200.jpg" alt=",,Zanikanie,, serigrafia, 70x100cm" data-gallery="rozdarcia"></div>
+            <div class="slide"><img src="./assets/Napiecie500.jpg" data-full="./assets/Napiecie1200.jpg" alt=",,Napięcie,, serigrafia, 98x140cm" data-gallery="rozdarcia"></div>
+        </div>
+        </div>
+          <button class="next">&#10095;</button>
+      </div>
+      <p class="gallery-description" style="max-width: 33.5rem;">Wielkoformatowe grafiki
+podejmujące temat ludzkich schematów, którymi często nieświadomie kierujemy się w&nbsp;życiu.
+Serigrafie skupiają się na ukazaniu wewnętrznego rozdarcia, jakie może rodzić się w&nbsp;człowieku
+w&nbsp;wyniku działania tych mechanizmów – sprzeczności między tym co czujemy, a&nbsp;tym co myślimy
+oraz wynikających z&nbsp;nich często zautomatyzowanych emocji i&nbsp;reakcji.</p>
+    </div>
+  </div>
+  </section>
+
+
+    <section class="gallery-section">
+    <div class="gallery-box-calendar">
+      <div class="gallery-content-mono">
+        <h2 class="gallery-title" style="text-align: center;">Czarno-białe serigrafie</h2>
+        <div class="gallery-wrapper">
+          <button class="prev">&#10094;</button>
+            <div class="gallery">
+              <div class="gallery-track">
+                <div class="slide"><img src="./assets/DuszLasu_500.jpg" data-full="./assets/DuszLasu_1200.jpg" alt=",,Duch lasu,, 100x140cm" data-gallery="SeriDark"></div>
+                <div class="slide"><img src="./assets/Marta_Kotewicz_Flora-stycznosc_500.jpg" data-full="./assets/Marta_Kotewicz_Flora-stycznosc_1200.jpg" alt=",,Flora-styczność,, 70x100cm" data-gallery="SeriDark"></div>
+                <div class="slide"><img src="./assets/Marta_Kotewicz_serigrafia_100x70cm_2021_monochromatyczne_500.jpg" data-full="./assets/Marta_Kotewicz_serigrafia_100x70cm_2021_monochromatyczne_1200.jpg" alt=",,Autoportret /dark,, 70x100cm" data-gallery="SeriDark"></div>
+                <div class="slide"><img src="./assets/Historie_500.jpg" data-full="./assets/Historie_1200.jpg" alt=",,Historie,, 70x100cm" data-gallery="SeriDark"></div>
+                <div class="slide"><img src="./assets/LetsDance2_500.jpg" data-full="./assets/LetsDance2_1200.jpg" alt=",,Let's dance,, 70x200cm. Grafika stworzona w technice czarne na czarnym." data-gallery="SeriDark"></div>
+              </div>
+            </div>
+          <button class="next">&#10095;</button>
+        </div>
+        <p class="gallery-description" style="text-align: center;">
+            Wielkoformatowe grafiki monochromatyczne.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="gallery-box-plakaty">
+      <div class="gallery-content-mashedup">
+        <h2 class="gallery-title" style="text-align: center;">Cykl słoneczny</h2>
+        <div class="gallery-wrapper">
+          <button class="prev">&#10094;</button>
+            <div class="gallery">
+              <div class="gallery-track">
+                <div class="slide"><img src="./assets/HereComesTheSun500.jpg" data-full="./assets/HereComesTheSun1200.jpg" alt=",,Here comes the sun,, 140x100cm" data-gallery="sunny"></div>
+                <div class="slide"><img src="./assets/PerfectDay500.jpg" data-full="./assets/PerfectDay1200.jpg" alt=",,Perfect day,, 70x100cm" data-gallery="sunny"></div>
+                <div class="slide"><img src="./assets/PerfectDayDark500.jpg" data-full="./assets/PerfectDayDark1200.jpg" alt=",,Perfect day /dark,, 70x100cm" data-gallery="sunny"></div>
+                <div class="slide"><img src="./assets/PerfectDayFluo500.jpg" data-full="./assets/PerfectDayFluo1200.jpg" alt=",,Here comes the sun /fluo,, 70x100cm" data-gallery="sunny"></div>
+
+              </div>
+            </div>
+          <button class="next">&#10095;</button>
+        </div>
+        <p class="gallery-description" style="text-align: center;">
+            Cykl wielkoformatowych serigrafii inspirowany relacją człowieka z naturą. Ujęcia portretowe. 
+        </p>
+      </div>
+    </div>
+  </section>
+
+    <section class="gallery-section">
+    <div class="gallery-box-pink">
+    <div class="gallery-content-vertical">
+      <h2 class="gallery-title">Grafiki w kolorze</h2>
+      <div class="gallery-wrapper-vertical">
+          <button class="prev">&#10094;</button>
+          <div class="gallery">
+          <div class="gallery-track">
+            <div class="slide"><img src="./assets/Halo500.jpg" data-full="./assets/Halo1200.jpg" alt=",,Halo,, 100x140cm" data-gallery="kolor"></div>
+            <div class="slide"><img src="./assets/Marta_Kotewicz_Dama_z_jednorozcem500.jpg" data-full="./assets/Marta_Kotewicz_Dama_z_jednorozcem1200.jpg" alt=",,Dama z jednorożcem,, 70x100cm" data-gallery="kolor"></div>
+            <div class="slide"><img src="./assets/Marta_Kotewicz_Damy_z_jednorozcami500.jpg" data-full="./assets/Marta_Kotewicz_Damy_z_jednorozcami1200.jpg" alt=",,Dama z jednorożcami,, 70x100cm" data-gallery="kolor"></div>
+            <div class="slide"><img src="./assets/Marta_Kotewicz_!!!500.jpg" data-full="./assets/Marta_Kotewicz_!!!1200.jpg" alt=",,!!!,, 70x100cm" data-gallery="kolor"></div>
+            <div class="slide"><img src="./assets/Styx500.jpg" data-full="./assets/Styx1200.jpg" alt=",,Styx,, 70x100cm" data-gallery="kolor"></div>
+          </div>
+        </div>
+          <button class="next">&#10095;</button>
+      </div>
+      <p class="gallery-description" style="max-width: 24.5rem;">Wielkoformatowe serigrafie, w których wykonano od trzech do pięciu warstw kolorystycznych.</p>
+    </div>
+  </div>
+  </section>
+      <footer>
+      <p style="margin-bottom: 1rem;">© 2025 Marta Kotewicz. Wszelkie prawa zastrzeżone.</p>
+      <p>Mockupy i inne materiały zewnętrzne wykorzystano zgodnie z ich licencjami.</br> Autor nie rości sobie do nich praw autorskich.</p>
+    </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" aria-hidden="true" role="dialog" aria-label="Podgląd zdjęcia">
+    <button id="lightbox-close" aria-label="Zamknij lightbox">✕</button>
+    <button id="lightbox-prev" class="lb-nav" aria-label="Poprzednie">‹</button>
+    <div class="lb-inner">
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption-wrap">
+        <div id="lightbox-caption"></div>
+        <div id="lightbox-counter"></div>
+      </div>
+    </div>
+    <button id="lightbox-next" class="lb-nav" aria-label="Następne">›</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="scripts/lottie.js"></script>
+  <script src="scripts/logo.js"></script>
+</body>
+</html>

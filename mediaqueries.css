@@ -1,0 +1,278 @@
+@media screen and (max-width: 75em) {
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 75em) {
+  .gallery-box-pink::before, .gallery-box-przewodnik::before, .gallery-box-pocztowki::before, .gallery-box-etykiety::before, .gallery-box-wino::before, .gallery-box-daily::before, .gallery-box-serce::before, .gallery-box-plakaty::before, .gallery-box-calendar::before, .gallery-box-scalenia::before, .gallery-box-hand::before {
+      mask-image:
+    linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+  }
+    .gallery-content-horizontal, .gallery-content-vertical, .gallery-content-mashedup, .gallery-content-mono, .gallery-content-serce, .gallery-content-muszla{
+        width: 80%;
+    }
+}
+
+@media (max-width: 75em) {
+  .section-container, .obok-siebie {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 87.5em) {
+
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 75em) {
+  #profile{
+    height: 73vh;
+  }
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  #profile {
+    margin-top: 3rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+    /* margin-top: 2rem; */
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container{
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 0.5rem;
+  }
+   .plain-container2 {
+    margin-right: 0rem;
+    padding: 0;
+    margin-top: 0;
+   }
+
+      .plain-container2pl {
+        margin-right: 0rem;
+        padding: 0;
+    margin-top: 0;
+    margin-bottom: 2rem;
+   }
+.plain-container2{
+  margin-bottom: 2rem;
+}
+
+   .obok-siebie{
+    gap: 3rem;
+   }
+
+     .section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* margin-bottom: 8rem; */
+  }
+
+  .about-containers {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  .text-container{
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+ .gallery-box-pink, .gallery-box-przewodnik, .gallery-box-pocztowki, .gallery-box-etykiety, .gallery-box-wino, .gallery-box-daily, .gallery-box-serce, .gallery-box-plakaty, .gallery-box-calendar, .gallery-box-scalenia, .gallery-box-hand {
+  margin: 0rem auto;
+ }
+   section {
+    margin: 0 3%;
+  }
+
+  .gallery-description, .gallery-description-muszla{
+    font-size: 0.9rem;
+    text-align: justify !important;
+  }
+
+  .gallery-description-muszla{
+    margin-left: 0rem !important;
+  }
+
+  .gallery-title{
+    font-size: 1.2rem;
+  }
+
+      .gallery-content-vertical .gallery-track .slide img{
+      height: 150%;
+    }
+
+          .gallery-content-mono .gallery-track .slide img{
+      height: 150%;
+    }
+
+          .gallery-content-muszla .gallery-track .slide img{
+      height: 130%;
+    }
+
+    .gallery-wrapper-vertical button.next {
+	right: -1.5rem;
+}
+
+.gallery-wrapper-vertical button.prev {
+	left: -1.5rem;
+}
+
+.gallery-box-scalenia button.next{
+  right: -1.5rem !important;
+}
+
+.gallery-box-scalenia button.prev{
+  left: -1.5rem !important;
+}
+
+.gallery-box-daily button.next{
+  right: -1.5rem !important;
+}
+
+.gallery-box-daily button.prev{
+  left: -1.5rem !important;
+}
+
+
+  #contact {
+    height: 63vh;
+  }
+
+  footer{
+    margin-top: 6vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  footer p{
+    font-size: 11px;
+    margin: 0.6rem;
+  }
+
+  #profile {
+    height: 67vh;
+    margin-bottom: 0;
+    margin-top: 3rem;
+  }
+
+    #about{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .section-container{
+    margin-left: 0rem;
+    margin-right: 0rem;
+    gap: 2rem;
+  }
+  .about-containers{
+    margin-bottom: 2rem;
+  }
+  .details-container p, h3{
+    font-size: 0.9rem;
+  }
+  .plain-container2pl{
+    margin-bottom: 0.8rem;
+  }
+  .plain-container2{
+    margin-bottom: 0.8rem;
+  }
+  .obok-siebie{
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .gallery-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gallery-wrapper button.prev {
+    left: -1.5rem;
+  }
+
+  .gallery-wrapper button.next {
+    right: -1.5rem;
+  }
+}

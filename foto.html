@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./assets/MK.png">
+  <title>Portfolio Marta Kotewicz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <!-- Nawigacja desktopowa -->
+  <nav id="desktop-nav">
+     <a href="index.html" id="logo-link">
+  <div id="logo"></div>
+</a>
+    <div class="right-side">
+      <ul class="nav-links">
+        <li><a href="proj.html">Grafika&nbsp;projektowa</a></li>
+        <li><a href="serigraphy.html">Serigrafia</a></li>
+        <li><a href="foto.html">Fotografia</a></li>
+        <li><a href="about.html">O&nbsp;mnie</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <div id="buttony">
+        <a href="foto.html"><img src="./assets/button-pl.svg" alt="Polski" width="24" height="24"></a>
+        <a href="foto-en.html"><img src="./assets/button-eng.svg" alt="English" width="24" height="24"></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Nawigacja mobilna -->
+  <nav id="hamburger-nav">
+        <a href="index.html" id="logo-link">
+  <div id="logo-hamburger"></div>
+</a>
+    <div class="hamburger-right-side">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="proj.html" onclick="toggleMenu()">Grafika&nbsp;projektowa</a></li>
+          <li><a href="serigraphy.html" onclick="toggleMenu()">Serigrafia</a></li>
+          <li><a href="foto.html" onclick="toggleMenu()">Fotografia</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">O&nbsp;mnie</a></li>
+          <li><a href="kontakt.html" onclick="toggleMenu()">Kontakt</a></li>
+        </ul>
+      </div>
+      <div id="buttony-hamburger">
+        <a href="foto.html"><img src="./assets/button-pl.svg" alt="Polski" width="24" height="24"></a>
+        <a href="foto-en.html"><img src="./assets/button-eng.svg" alt="English" width="24" height="24"></a>
+      </div>
+    </div>
+  </nav>
+
+    <section class="gallery-section">
+    <div class="gallery-box-scalenia">
+    <div class="gallery-content-vertical">
+      <h2 class="gallery-title">Cykl fotografii pt. "Scalenia"</h2>
+      <div class="gallery-wrapper">
+          <button class="prev">&#10094;</button>
+          <div class="gallery">
+          <div class="gallery-track">
+            <div class="slide"><img src="./assets/27_04_2024_19_42_12_watermarked_500.jpg" data-full="./assets/27_04_2024_19_42_12_watermarked_1200.jpg" alt=",,27-04-2024 19:42:12,," data-gallery="scalenia"></div>
+            <div class="slide"><img src="./assets/05_05_2024_15_47_07_500.jpg" data-full="./assets/05_05_2024_15_47_07_1200.jpg" alt=",,05-05-2024 15:47:07,," data-gallery="scalenia"></div>            
+            <div class="slide"><img src="./assets/17_07_2024_21_32_53_500.jpg" data-full="./assets/17_07_2024_21_32_53_1200.jpg" alt=",,17-07-2024 21:32:53,," data-gallery="scalenia"></div>
+            <div class="slide"><img src="./assets/04_08_2024_06_11_17_500.jpg" data-full="./assets/04_08_2024_06_11_17_1200.jpg" alt=",,04-08-2024 06:11:17,," data-gallery="scalenia"></div>            
+            <div class="slide"><img src="./assets/04_08_2024_06_27_05_500.jpg" data-full="./assets/04_08_2024_06_27_05_1200.jpg" alt=",,04-08-2024 06:27:05,," data-gallery="scalenia"></div>
+            <div class="slide"><img src="./assets/12_08_2024_20_46_51_500.jpg" data-full="./assets/12_08_2024_20_46_51_1200.jpg" alt=",,12-08-2024 20:46:51,," data-gallery="scalenia"></div>            
+            <div class="slide"><img src="./assets/15_08_2024_02_20_24_500.jpg" data-full="./assets/15_08_2024_02_20_24_1200.jpg" alt=",,15-08-2024 02:20:24,," data-gallery="scalenia"></div>
+            <div class="slide"><img src="./assets/17_08_2024_23_33_37_500.jpg" data-full="./assets/17_08_2024_23_33_37_1200.jpg" alt=",,17-08-2024 23:33:37,," data-gallery="scalenia"></div>
+            <div class="slide"><img src="./assets/17_08_2024_23_38_26_500.jpg" data-full="./assets/17_08_2024_23_38_26_1200.jpg" alt=",,17-08-2024 23:38:26,," data-gallery="scalenia"></div>
+            <div class="slide"><img src="./assets/18_10_2024_18_17_36_500.jpg" data-full="./assets/18_10_2024_18_17_36_1200.jpg" alt=",,18-10-2024 18:17:36,," data-gallery="scalenia"></div>
+            <div class="slide"><img src="./assets/11_11_2024_13_14_35_500.jpg" data-full="./assets/11_11_2024_13_14_35_1200.jpg" alt=",,11-11-2024 13:14:35,," data-gallery="scalenia"></div>
+            <div class="slide"><img src="./assets/02_05_2025_20_31_22_500.jpg" data-full="./assets/02_05_2025_20_31_22_1200.jpg" alt=",,02-05-2025 20:31:22,," data-gallery="scalenia"></div>
+          </div>
+        </div>
+          <button class="next">&#10095;</button>
+      </div>
+      <p class="gallery-description" style="max-width: 25.5rem;">Seria dwunastu fotografii przedstawiających krajobrazy jezior. Cykl skupia się na wadze chwili, potrzebie zwolnienia i&nbsp;zatrzymania się oraz na znaczeniu natury w&nbsp;życiu człowieka. Każda fotografia została zatytułowana dokładną datą i&nbsp;godziną jej wykonania z&nbsp;precyzją co do sekundy, by osadzić widza w&nbsp;ulotnym momencie zawieszenia.</p>
+    </div>
+  </div>
+  </section>
+
+      <section class="gallery-section">
+    <div class="gallery-box-daily">
+    <div class="gallery-content-vertical">
+      <h2 class="gallery-title">Cykl fotografii pt. "Codzienność"</h2>
+      <div class="gallery-wrapper">
+          <button class="prev">&#10094;</button>
+          <div class="gallery">
+          <div class="gallery-track">
+            <div class="slide"><img src="./assets/Codziennosc1_500w.jpg" data-full="./assets/Codziennosc1_1200w.jpg" alt=",,Codzienność 1,," data-gallery="daily"></div>
+            <div class="slide"><img src="./assets/Codziennosc2_500w.jpg" data-full="./assets/Codziennosc2_1200w.jpg" alt=",,Codzienność 2,," data-gallery="daily"></div>
+            <div class="slide"><img src="./assets/Codziennosc3_500w.jpg" data-full="./assets/Codziennosc3_1200w.jpg" alt=",,Codzienność 3,," data-gallery="daily"></div>
+            <div class="slide"><img src="./assets/Codziennosc4_500w.jpg" data-full="./assets/Codziennosc4_1200w.jpg" alt=",,Codzienność 4,," data-gallery="daily"></div>
+            <div class="slide"><img src="./assets/Codziennosc5_500w.jpg" data-full="./assets/Codziennosc5_1200w.jpg" alt=",,Codzienność 5,," data-gallery="daily"></div>
+            <div class="slide"><img src="./assets/Codziennosc6_500w.jpg" data-full="./assets/Codziennosc6_1200w.jpg" alt=",,Codzienność 6,," data-gallery="daily"></div>
+            <div class="slide"><img src="./assets/Codziennosc7_500w.jpg" data-full="./assets/Codziennosc7_1200w.jpg" alt=",,Codzienność 7,," data-gallery="daily"></div>
+            <div class="slide"><img src="./assets/Codziennosc8_500w.jpg" data-full="./assets/Codziennosc8_1200w.jpg" alt=",,Codzienność 8,," data-gallery="daily"></div>
+            <div class="slide"><img src="./assets/Codziennosc9_500w.jpg" data-full="./assets/Codziennosc9_1200w.jpg" alt=",,Codzienność 9,," data-gallery="daily"></div>
+            <div class="slide"><img src="./assets/Codziennosc10_500w.jpg" data-full="./assets/Codziennosc10_1200w.jpg" alt=",,Codzienność 10,," data-gallery="daily"></div>
+          </div>
+        </div>
+          <button class="next">&#10095;</button>
+      </div>
+      <p class="gallery-description" style="max-width: 35rem;">Seria opowiada o&nbsp;relacjach międzyludzkich za pomocą przedmiotu codziennego użytku. Szczoteczki do zębów są jednym z&nbsp;najbardziej intymnych przedmiotów w&nbsp;naszym życiu, co podkreśla charakter ukazanych relacji. Cykl inspirowany obrazem "Pocałunek" Gustava Klimta.</p>
+    </div>
+  </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="gallery-box-hand">
+    <div class="gallery-content-vertical">
+      <h2 class="gallery-title">Studium dłoni</h2>
+      <div class="gallery-wrapper-vertical">
+          <button class="prev">&#10094;</button>
+          <div class="gallery">
+          <div class="gallery-track">
+            <div class="slide"><img src="./assets/Dark_WplywSwiatlocieniaIFaktury_500.jpg" data-full="./assets/Dark_WplywSwiatlocieniaIFaktury1200.jpg" alt=",,Dark,, - wpływ światłocienia i faktury." data-gallery="Dark"></div>
+            <div class="slide"><img src="./assets/Dark_WplywSwiatlocieniaIFakturyII_500.jpg" data-full="./assets/Dark_WplywSwiatlocieniaIFakturyII_1200.jpg" alt=",,Dark II,, - wpływ światłocienia i faktury." data-gallery="Dark"></div>
+            <div class="slide"><img src="./assets/Dark_WplywSwiatlocieniaIFakturyIII_500.jpg" data-full="./assets/Dark_WplywSwiatlocieniaIFakturyIII_1200.jpg" alt=",,Dark III,, - wpływ światłocienia i faktury." data-gallery="Dark"></div>
+          </div>
+        </div>
+          <button class="next">&#10095;</button>
+      </div>
+      <p class="gallery-description" style="max-width: 26rem;">Studium dłoni. Badanie wpływu światłocienia i&nbsp;faktury obiektu.</p>
+    </div>
+  </div>
+  </section>
+
+    <section class="gallery-section">
+    <div class="gallery-box-plakaty">
+    <div class="gallery-content-muszla">
+      <h2 class="gallery-title" style="text-align: center;">Studium muszli</h2>
+      <div class="gallery-wrapper">
+          <button class="prev">&#10094;</button>
+          <div class="gallery">
+          <div class="gallery-track">
+            <div class="slide"><img src="./assets/fotografiaNegatyw_500.jpg" data-full="./assets/fotografiaNegatyw_1200.jpg" alt=",,Negatyw,, - przedstawienie muszli w negatywnym świetle." data-gallery="muszla"></div>
+            <div class="slide"><img src="./assets/fotografiaNeutral_500.jpg" data-full="./assets/fotografiaNeutral_1200.jpg" alt=",,Neutral,, - przedstawienie muszli w neutralnym świetle." data-gallery="muszla"></div>
+            <div class="slide"><img src="./assets/fotografiaPozytyw_500.jpg" data-full="./assets/fotografiaPozytyw_1200.jpg" alt=",,Pozytyw,, - przedstawienie muszli w pozytywnym świetle." data-gallery="muszla"></div>
+          </div>
+        </div>
+          <button class="next">&#10095;</button>
+      </div>
+      <p class="gallery-description-muszla" style="max-width: 38.1rem; margin-left: 5.4rem;">Studium muszli. Przedstawienie jednego obiektu w świetle: pozytywnym, neutralnym i&nbsp;negatywnym. Zmiana odbioru przedmiotu w&nbsp;zależności od sposobu jego przedstawienia.</p>
+    </div>
+  </div>
+  </section>
+
+      <footer>
+      <p style="margin-bottom: 1rem;">© 2025 Marta Kotewicz. Wszelkie prawa zastrzeżone.</p>
+      <p>Mockupy i inne materiały zewnętrzne wykorzystano zgodnie z ich licencjami.</br> Autor nie rości sobie do nich praw autorskich.</p>
+    </footer>
+  <!-- Lightbox -->
+  <div id="lightbox" aria-hidden="true" role="dialog" aria-label="Podgląd zdjęcia">
+    <button id="lightbox-close" aria-label="Zamknij lightbox">✕</button>
+    <button id="lightbox-prev" class="lb-nav" aria-label="Poprzednie">‹</button>
+    <div class="lb-inner">
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption-wrap">
+        <div id="lightbox-caption"></div>
+        <div id="lightbox-counter"></div>
+      </div>
+    </div>
+    <button id="lightbox-next" class="lb-nav" aria-label="Następne">›</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="scripts/lottie.js"></script>
+  <script src="scripts/logo.js"></script>
+</body>
+</html>

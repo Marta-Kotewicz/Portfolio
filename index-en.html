@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./assets/MK.png">
+  <title>Portfolio Marta Kotewicz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <!-- Nawigacja desktopowa -->
+  <nav id="desktop-nav">
+        <a href="index-en.html" id="logo-link">
+  <div id="logo"></div>
+</a>
+    <div class="right-side">
+      <ul class="nav-links">
+                    <li><a href="proj-en.html">Graphic&nbsp;Design</a></li>
+                    <li><a href="serigraphy-en.html">Serigraphy</a></li>
+                    <li><a href="foto-en.html">Photography</a></li>
+                    <li><a href="about-en.html">About&nbsp;me</a></li>
+                    <li><a href="kontakt-en.html">Contact</a></li>  
+      </ul>
+      <div id="buttony">
+        <a href="index.html"><img src="./assets/button-pl.svg" alt="Polski" width="24" height="24"></a>
+        <a href="index-en.html"><img src="./assets/button-eng.svg" alt="English" width="24" height="24"></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Nawigacja mobilna -->
+  <nav id="hamburger-nav">
+        <a href="index-en.html" id="logo-link">
+  <div id="logo-hamburger"></div>
+</a>
+    <div class="hamburger-right-side">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <ul class="menu-links">
+                <li><a href="proj-en.html" onclick="toggleMenu()">Graphic&nbsp;Design</a></li>
+                <li><a href="serigraphy-en.html" onclick="toggleMenu()">Serigraphy</a></li>
+                <li><a href="foto-en.html" onclick="toggleMenu()">Photography</a></li>
+                <li><a href="about-en.html" onclick="toggleMenu()">About&nbsp;me</a></li>
+                <li><a href="kontakt-en.html" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+      <div id="buttony-hamburger">
+        <a href="index.html"><img src="./assets/button-pl.svg" alt="Polski" width="24" height="24"></a>
+        <a href="index-en.html"><img src="./assets/button-eng.svg" alt="English" width="24" height="24"></a>
+      </div>
+    </div>
+  </nav>
+
+ <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/about_pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, my name is</p>
+        <h1 class="title">Marta Kotewicz</h1>
+        <p class="section__text__p2">I create graphics</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CuriculumVitaeMartaKotewiczEnglishCV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='kontakt-en.html'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+        <footer>
+      <p style="margin-bottom: 1rem;">Copyright &#169; 2025 Marta Kotewicz. All Rights Reserved.</p>
+      <p>Mockups and third-party resources are used under their respective licenses.</br> No copyright claimed on those materials.</p>
+    </footer>
+  <!-- Lightbox -->
+  <div id="lightbox" aria-hidden="true" role="dialog" aria-label="Podgląd zdjęcia">
+    <button id="lightbox-close" aria-label="Zamknij lightbox">✕</button>
+    <button id="lightbox-prev" class="lb-nav" aria-label="Poprzednie">‹</button>
+    <div class="lb-inner">
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption-wrap">
+        <div id="lightbox-caption"></div>
+        <div id="lightbox-counter"></div>
+      </div>
+    </div>
+    <button id="lightbox-next" class="lb-nav" aria-label="Następne">›</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="scripts/lottie.js"></script>
+  <script src="scripts/logo.js"></script>
+</body>
+</html>

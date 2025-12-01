@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./assets/MK.png">
+  <title>Portfolio Marta Kotewicz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <!-- Nawigacja desktopowa -->
+  <nav id="desktop-nav">
+    <a href="index.html" id="logo-link">
+  <div id="logo"></div>
+</a>
+    <div class="right-side">
+      <ul class="nav-links">
+        <li><a href="proj.html">Grafika&nbsp;projektowa</a></li>
+        <li><a href="serigraphy.html">Serigrafia</a></li>
+        <li><a href="foto.html">Fotografia</a></li>
+        <li><a href="about.html">O&nbsp;mnie</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <div id="buttony">
+        <a href="about.html"><img src="./assets/button-pl.svg" alt="Polski" width="24" height="24"></a>
+        <a href="about-en.html"><img src="./assets/button-eng.svg" alt="English" width="24" height="24"></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Nawigacja mobilna -->
+  <nav id="hamburger-nav">
+        <a href="index.html" id="logo-link">
+  <div id="logo-hamburger"></div>
+</a>
+    <div class="hamburger-right-side">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="proj.html" onclick="toggleMenu()">Grafika&nbsp;projektowa</a></li>
+          <li><a href="serigraphy.html" onclick="toggleMenu()">Serigrafia</a></li>
+          <li><a href="foto.html" onclick="toggleMenu()">Fotografia</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">O&nbsp;mnie</a></li>
+          <li><a href="kontakt.html" onclick="toggleMenu()">Kontakt</a></li>
+        </ul>
+      </div>
+      <div id="buttony-hamburger">
+        <a href="about.html"><img src="./assets/button-pl.svg" alt="Polski" width="24" height="24"></a>
+        <a href="about-en.html"><img src="./assets/button-eng.svg" alt="English" width="24" height="24"></a>
+      </div>
+    </div>
+  </nav>
+
+     <section id="about">
+                  <!-- <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1><br/> -->
+      <!-- <h1 class="title">O mnie</h1><br/> -->
+      <div class="section-container">
+        <div class="plain-container2pl">
+        <div class="section__pic-container">
+          <img src="./assets/about_square.png" alt="Profile picture" class="about-pic"/>
+        </div>
+        
+        <div class="plain-container">
+            <img src="./assets/exp.png" alt="Experience icon" class="icon"/>
+              <h3>Certyfikaty</h3><br/>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/certyfikat illustrator.pdf')">
+            Adobe Illustrator
+          </button>
+          <button class="btn btn-color-1" onclick="window.open('./assets/certyfikat indesign.pdf')">
+            Adobe InDesign
+          </button>
+          <button class="btn btn-color-1" onclick="window.open('./assets/certyfikat psd.pdf')">
+            Adobe Photoshop
+          </button>
+        </div>
+        </div>
+      </div>
+      
+          <div class="about-details-container">
+            <!-- <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1><br/> -->
+      <h1 class="title">O&nbsp;mnie</h1><br/>
+
+          <div class="about-containers">
+            <div class="obok-siebie">
+            <div class="details-container">
+              <img
+                src="./assets/studia2.png"
+                alt="Education icon"
+                class="icon"
+              />              
+              <h3>Studia wyższe</h3>
+              <p style="margin-top: 1rem; margin-bottom: 1rem;">Studia magisterskie z&nbsp;Grafiki<br style="margin-bottom: 0.5rem;" />Studia licencjackie z&nbsp;Informatyki </p>
+              <h3>Kursy</h3>
+              <p style="margin-top: 1rem; margin-bottom: 1rem;">Grafika komputerowa<br style="margin-bottom: 0.5rem;" />Dekorator Wnętrz </p>          
+
+            </div>
+             <div class="details-container"><img
+                src="./assets/kwalifikacje3.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Kwalifikacje</h3>
+              <p style="margin-top: 1rem; font-weight: 410; margin-bottom: 1rem;">A25: Wykonywanie i&nbsp;realizacja projektów multimedialnych: 
+              </p><p style="margin-bottom: 1rem;">Technik cyfrowych procesów graficznych (311911) </p><p> Fototechnik (343104)</p>
+            </div>              
+
+            </div>
+                    
+          </div>
+          <div class="text-container">
+            <p class="about-description">
+Ukończyłam studia magisterskie z&nbsp;grafiki na Wydziale Sztuk Pięknych Uniwersytetu Mikołaja Kopernika w&nbsp;Toruniu oraz studia licencjackie z&nbsp;informatyki na Uniwersytecie Gdańskim. Zrealizowałam dwa roczne kursy specjalistyczne z&nbsp;grafiki komputerowej oraz dekoracji wnętrz.
+
+</br></p><p class="about-description" style="margin-top: 1rem; margin-bottom: 1rem;">W swojej twórczości czerpię inspiracje z&nbsp;natury - zarówno tej wokół nas, jak i&nbsp;tej ludzkiej. Projektuję grafikę wektorową i&nbsp;rastrową. Zajmuję się typografią oraz składem tekstu. Poruszam się w&nbsp;programach takich jak Blender, Adobe: InDesign, Photoshop, Illustrator i&nbsp;After Effects.
+            </p><p class="about-description">Mam na koncie udział w&nbsp;wielu wystawach zbiorowych, również międzynarodowych oraz dwie wystawy indywidualne.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <p style="margin-bottom: 1rem;">© 2025 Marta Kotewicz. Wszelkie prawa zastrzeżone.</p>
+      <p>Mockupy i inne materiały zewnętrzne wykorzystano zgodnie z ich licencjami.</br> Autor nie rości sobie do nich praw autorskich.</p>
+    </footer>
+  <!-- Lightbox -->
+  <div id="lightbox" aria-hidden="true" role="dialog" aria-label="Podgląd zdjęcia">
+    <button id="lightbox-close" aria-label="Zamknij lightbox">✕</button>
+    <button id="lightbox-prev" class="lb-nav" aria-label="Poprzednie">‹</button>
+    <div class="lb-inner">
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption-wrap">
+        <div id="lightbox-caption"></div>
+        <div id="lightbox-counter"></div>
+      </div>
+    </div>
+    <button id="lightbox-next" class="lb-nav" aria-label="Następne">›</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="scripts/lottie.js"></script>
+  <script src="scripts/logo.js"></script>
+</body>
+</html>
