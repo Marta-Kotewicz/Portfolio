@@ -294,13 +294,16 @@ nav {
 }
 
 
-.gallery-description, .gallery-description-muszla, .about-description {
+.gallery-description,
+.gallery-description-muszla,
+.about-description {
   hyphens: auto;
   -webkit-hyphens: auto;
-  -ms-hyphens: auto;
   -moz-hyphens: auto;
-  word-break: break-all;
-  overflow-wrap: break-word;
+  -ms-hyphens: auto;
+  word-break: normal;
+  overflow-wrap: break-word; /* lub 'anywhere' jeśli naprawdę trzeba */
+  white-space: normal;
 }
 
 body {
