@@ -295,13 +295,19 @@ nav {
 
 
 .gallery-description, .gallery-description-muszla, .about-description{
-   hyphens: auto;
-       -webkit-hyphens: auto;
-    -ms-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+body {
+  font-family: "Poppins", system-ui, sans-serif;
 }
 
 .break-word {
-  display: inline-block; 
+  /* display: inline-block;  */
   white-space: normal; /* pozwala na łamanie linii */
 }
 

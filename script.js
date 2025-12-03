@@ -249,6 +249,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
 // const textDiv = document.querySelector('.gallery-description');
 
 // function insertHyphens(word, minLength = 5) {
