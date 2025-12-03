@@ -239,13 +239,37 @@ window.addEventListener('resize', reorderAboutTitleEn);
 
 //Łamanie słów
 
-document.addEventListener("DOMContentLoaded", () => {
-  const h = new Hypher(Hypher.languages.pl);
 
-  document.querySelectorAll('.gallery-description, .gallery-description-muszla, .about-description')
-    .forEach(el => {
-      el.innerHTML = h.hyphenateText(el.innerText);
+// Zakładam, że masz już załadowany Hypher i pl.js
+document.addEventListener("DOMContentLoaded", () => {
+  // Tworzymy instancję Hypher z polskim słownikiem
+  const h = new Hypher(PL); // PL – polski słownik z pl.js
+
+  // Funkcja, która dzieli słowa i wstawia <wbr> lub dywiz
+  function hyphenateElement(element) {
+    element.childNodes.forEach(node => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        const words = node.nodeValue.split(/\b/); // dzielimy tekst na słowa i znaki graniczne
+        const hyphenated = words.map(word => {
+          // Hypher zwraca tablicę części słowa
+          const parts = h.hyphenate(word);
+          return parts.join("\u00AD"); // miękki dywiz – HTML interpretuje jako znak dzielenia
+        }).join('');
+        const span = document.createElement('span');
+        span.innerHTML = hyphenated;
+        node.replaceWith(span);
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        hyphenateElement(node); // rekurencyjnie dla dzieci
+      }
     });
+  }
+
+  // Wybieramy wszystkie opisy galerii
+  const descriptions = document.querySelectorAll('.gallery-description, .gallery-description-muszla, .about-description');
+
+  descriptions.forEach(el => {
+    hyphenateElement(el);
+  });
 });
 
 
