@@ -990,10 +990,18 @@ nav {
   display: flex;
 }
 
-.about-pic {
+/* .about-pic {
    width: auto;
    height: auto;
   border-radius: 2rem;
+} */
+
+.about-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+  display: block;
 }
 
 .arrow {
