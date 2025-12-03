@@ -299,7 +299,7 @@ nav {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   -moz-hyphens: auto;
-  word-break: break-word;
+  word-break: break-all;
   overflow-wrap: break-word;
 }
 
