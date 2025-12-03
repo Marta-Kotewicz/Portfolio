@@ -301,9 +301,10 @@ nav {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
-  word-break: normal;
-  overflow-wrap: break-word; /* lub 'anywhere' jeśli naprawdę trzeba */
-  white-space: normal;
+
+  word-break: normal;        /* nie łamiemy na siłę */
+  overflow-wrap: break-word; /* łamanie w razie potrzeby */
+  white-space: normal;       /* pozwala na zawijanie linii */
 }
 
 body {
