@@ -31,7 +31,7 @@ a,
 }
 
 a {
-  color: black;
+  color: black !important;
   text-decoration: none;
 }
 
@@ -39,7 +39,7 @@ a:hover {
   color: gray;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: rgb(181, 181, 181) !important;
 }
 
 /* --- Nawigacja desktopowa --- */
@@ -57,7 +57,7 @@ nav {
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 0.68) 45%,
     rgba(255, 255, 255, 1) 100%
-  );
+  ) !important;
 }
 
 .nav-links {
@@ -120,7 +120,7 @@ nav {
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 0.68) 45%,
     rgba(255, 255, 255, 1) 100%
-  );
+  ) !important;
 }
 
 .hamburger-right-side {
@@ -165,7 +165,7 @@ nav {
   position: absolute;
   top: 100%;
   right: 0;
-  background:radial-gradient( circle, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.3) 350%, rgb(255, 255, 255) 900% );
+  background:radial-gradient( circle, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.3) 350%, rgb(255, 255, 255) 900% ) !important;
   border-radius: 0.625rem; /* 10px */
   width: fit-content;
   max-height: 0;
@@ -1344,7 +1344,7 @@ footer p {
   background: transparent;
   border: none;
   font-size: 1.75rem; /* 28px */
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
 }
 
@@ -1358,7 +1358,7 @@ footer p {
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.06);
   border: none;
-  color: #fff;
+  color: #fff !important;
   font-size: 2.625rem; /* 42px */
   width: 3.25rem; /* 52px */
   height: 4.5rem; /* 72px */
