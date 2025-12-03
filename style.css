@@ -296,6 +296,8 @@ nav {
 
 .gallery-description, .gallery-description-muszla, .about-description{
    hyphens: auto;
+       -webkit-hyphens: auto;
+    -ms-hyphens: auto;
 }
 
 .break-word {
@@ -1174,7 +1176,8 @@ footer p {
 #sd-container {
     position: fixed;
     bottom: 10px;
-    left: 90%;
+    /* left: 90%; */
+    right: 8rem;
     transform: translateY(-50%);
     z-index: 99999;
 }

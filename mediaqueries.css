@@ -58,9 +58,6 @@
     display: block;
     /* margin-top: 2rem; */
   }
-  .arrow {
-    display: none;
-  }
   section,
   .section-container {
     height: fit-content;

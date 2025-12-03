@@ -236,6 +236,19 @@ function reorderAboutTitleEn() {
 window.addEventListener('load', reorderAboutTitleEn);
 window.addEventListener('resize', reorderAboutTitleEn);
 
+
+//Łamanie słów
+
+document.addEventListener("DOMContentLoaded", () => {
+  const h = new Hypher(Hypher.languages.pl);
+
+  document.querySelectorAll('.gallery-description, .gallery-description-muszla, .about-description')
+    .forEach(el => {
+      el.innerHTML = h.hyphenateText(el.innerText);
+    });
+});
+
+
 // const textDiv = document.querySelector('.gallery-description');
 
 // function insertHyphens(word, minLength = 5) {
