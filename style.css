@@ -13,10 +13,15 @@ html {
   font-size: 100%; /* 1rem = 16px */
 }
 
+
+:root{
+  color-scheme: light;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background: #fff;
-  color: #000;
+  background: #fff !important;
+  color: #000 !important;
   line-height: 1.5;
 }
 
