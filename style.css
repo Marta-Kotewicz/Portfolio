@@ -13,6 +13,10 @@ html {
   font-size: 100%; /* 1rem = 16px */
 }
 
+html body nav#desktop-nav a#logo-link div#logo svg path {
+  fill: #000 !important;
+  stroke: #000 !important;
+}
 
 :root{
   color-scheme: light;
@@ -396,7 +400,7 @@ body {
       black 80%,
       transparent 100%
     ),
-    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%) ;
   -webkit-mask-composite: intersect;
   mask-image: linear-gradient(
       to right,
@@ -405,10 +409,10 @@ body {
       black 80%,
       transparent 100%
     ),
-    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%) !important;
   mask-composite: intersect;
 
-  background: #adace2;
+  background: #adace2 !important;
 }
 
 .gallery-box-przewodnik > *{
@@ -442,7 +446,7 @@ body {
       black 80%,
       transparent 100%
     ),
-    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%) !important;
   -webkit-mask-composite: intersect;
   mask-image: linear-gradient(
       to right,
@@ -451,14 +455,14 @@ body {
       black 80%,
       transparent 100%
     ),
-    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%) !important;
   mask-composite: intersect;
 
     /* background: #F7F2EB; */
   /* background: #F3EEE7; */
   /* background: #E4E6E8; */
   /* background: #F2EDE6; */
-  background: #ece3d6;
+  background: #ece3d6 !important;
 }
 
 .gallery-box-scalenia > *{
@@ -492,7 +496,7 @@ body {
       black 80%,
       transparent 100%
     ),
-    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%) !important;
   -webkit-mask-composite: intersect;
   mask-image: linear-gradient(
       to right,
@@ -501,12 +505,12 @@ body {
       black 80%,
       transparent 100%
     ),
-    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%) !important;
   mask-composite: intersect;
 
   /* background: #cbc1dd;  */
       /* background: #ebe1ce; */
-      background: #e4d4b8;
+      background: #e4d4b8 !important;
     /* background: #F5EDE4; */
 }
 
@@ -541,7 +545,7 @@ body {
       black 80%,
       transparent 100%
     ),
-    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%) !important;
   -webkit-mask-composite: intersect;
   mask-image: linear-gradient(
       to right,
@@ -550,7 +554,7 @@ body {
       black 80%,
       transparent 100%
     ),
-    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%) !important;
   mask-composite: intersect;
 
   background: #FAE7C1;
@@ -586,7 +590,7 @@ body {
       black 80%,
       transparent 100%
     ),
-    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%) !important;
   -webkit-mask-composite: intersect;
   mask-image: linear-gradient(
       to right,
@@ -595,10 +599,10 @@ body {
       black 80%,
       transparent 100%
     ),
-    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%) !important;
   mask-composite: intersect;
 
-  background: #b5d4d0; 
+  background: #b5d4d0 !important; 
 }
 
 .gallery-box-plakaty > *{
@@ -677,7 +681,7 @@ body {
       black 80%,
       transparent 100%
     ),
-    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%) !important;
   -webkit-mask-composite: intersect;
   mask-image: linear-gradient(
       to right,
@@ -686,7 +690,7 @@ body {
       black 80%,
       transparent 100%
     ),
-    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%) !important;
   mask-composite: intersect;
 
   background: #fde790;
@@ -730,7 +734,7 @@ body {
       black 80%,
       transparent 100%
     ),
-    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%) !important;
   -webkit-mask-composite: intersect;
   mask-image: linear-gradient(
       to right,
@@ -739,7 +743,7 @@ body {
       black 80%,
       transparent 100%
     ),
-    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%) !important;
   mask-composite: intersect;
 }
 
