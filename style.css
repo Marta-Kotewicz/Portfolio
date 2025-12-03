@@ -297,14 +297,14 @@ nav {
 .gallery-description,
 .gallery-description-muszla,
 .about-description {
-  hyphens: auto;
+  hyphens: auto;          /* hyphenacja tam, gdzie przeglądarka wspiera */
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
 
-  word-break: normal;        /* nie łamiemy na siłę */
+  word-break: normal;     /* nie łamiemy słów na siłę */
   overflow-wrap: break-word; /* łamanie w razie potrzeby */
-  white-space: normal;       /* pozwala na zawijanie linii */
+  white-space: normal;    /* pozwala na zawijanie linii */
 }
 
 body {

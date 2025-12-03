@@ -241,16 +241,28 @@ window.addEventListener('resize', reorderAboutTitleEn);
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const isProblematicAndroid = () => {
-    const ua = navigator.userAgent || '';
-    return /Android/.test(ua) && /Redmi|MI/.test(ua);
-  };
+
+  // Funkcja testująca wsparcie dla soft hyphen (\u00AD)
+  function supportsSoftHyphen() {
+    const test = document.createElement('span');
+    test.style.visibility = 'hidden';
+    test.style.position = 'absolute';
+    test.style.width = '1px';
+    test.style.whiteSpace = 'nowrap';
+    test.textContent = 'test\u00ADtest';
+    document.body.appendChild(test);
+
+    const isSupported = test.offsetWidth < test.scrollWidth;
+    document.body.removeChild(test);
+    return isSupported;
+  }
 
   const elements = document.querySelectorAll('.gallery-description, .gallery-description-muszla, .about-description');
 
-  if (!isProblematicAndroid() && window.Hypher && window.PL) {
-    // Hyphenacja dla wspieranych przeglądarek
+  if (window.Hypher && window.PL && supportsSoftHyphen()) {
+    // Hyphenacja dla przeglądarek wspierających
     const h = new Hypher(PL);
+
     elements.forEach(el => {
       function hyphenateElement(node) {
         node.childNodes.forEach(n => {
@@ -267,13 +279,15 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       hyphenateElement(el);
     });
+
   } else {
-    // Fallback dla problemowych Androidów
+    // Fallback dla przeglądarek/problemowych Androidów
     elements.forEach(el => {
       el.style.overflowWrap = 'anywhere';
       el.style.wordBreak = 'break-word';
     });
   }
+
 });
 
 
