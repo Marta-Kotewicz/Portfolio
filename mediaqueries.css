@@ -1,4 +1,4 @@
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 83.125em) {
     #desktop-nav{
         display: none;
     }
@@ -8,10 +8,16 @@
 }
 
 @media screen and (max-width: 75em) {
-  .gallery-box-pink::before, .gallery-box-przewodnik::before, .gallery-box-pocztowki::before, .gallery-box-etykiety::before, .gallery-box-wino::before, .gallery-box-daily::before, .gallery-box-serce::before, .gallery-box-plakaty::before, .gallery-box-calendar::before, .gallery-box-scalenia::before, .gallery-box-hand::before {
+  .gallery-box-pink::before, .gallery-box-przewodnik::before, .gallery-box-pocztowki::before, .gallery-box-etykiety::before, .gallery-box-wino::before, .gallery-box-daily::before, .gallery-box-serce::before, .gallery-box-plakaty::before, .gallery-box-calendar::before, .gallery-box-scalenia::before, .gallery-box-hand::before{
       mask-image:
     linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%),
     linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+  }
+
+  .gallery-group::before {
+      mask-image:
+    linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
   }
     .gallery-content-horizontal, .gallery-content-vertical, .gallery-content-mashedup, .gallery-content-mono, .gallery-content-serce, .gallery-content-muszla{
         width: 80%;
@@ -107,12 +113,18 @@
 }
 
 @media screen and (max-width: 37.5em) {
- .gallery-box-pink, .gallery-box-przewodnik, .gallery-box-pocztowki, .gallery-box-etykiety, .gallery-box-wino, .gallery-box-daily, .gallery-box-serce, .gallery-box-plakaty, .gallery-box-calendar, .gallery-box-scalenia, .gallery-box-hand {
+ .gallery-box-pink, .gallery-box-przewodnik, .gallery-box-pocztowki, .gallery-box-etykiety, .gallery-box-wino, .gallery-box-daily, .gallery-box-serce, .gallery-box-plakaty, .gallery-box-calendar, .gallery-box-scalenia, .gallery-box-hand, .gallery-group {
   margin: 0rem auto;
  }
    section {
     margin: 0 3%;
   }
+
+.gallery-group-title{
+  width: 81%;
+  margin-bottom: 2.5rem;
+  font-size: 1.3rem;
+}
 
   .gallery-description, .gallery-description-muszla{
     font-size: 0.9rem;
@@ -203,6 +215,11 @@
     flex-wrap: wrap;
   }
 
+  .btn-container{
+    grid-template-columns: 1fr;
+  }
+
+
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
@@ -260,6 +277,12 @@
 }
 
 @media (max-width: 48em) {
+
+  .gallery-group-title{
+  width: 81%;
+  margin-bottom: 2.5rem;
+}
+
   .gallery-section {
     flex-direction: column;
     text-align: center;

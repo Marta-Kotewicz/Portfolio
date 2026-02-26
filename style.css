@@ -248,9 +248,14 @@ nav {
 /* BUTTONS */
 
 .btn-container {
-  display: flex;
+ display: grid;
+  grid-template-columns: repeat(3, max-content);
   justify-content: center;
   gap: 1rem;
+}
+
+.btn-container button:last-child{
+  grid-column: 2; /* środkowa kolumna */
 }
 
 .btn {
@@ -373,6 +378,64 @@ body {
   z-index: 1;
   width: 100%;
 } */
+
+.odstep{
+  position: relative;
+  width: 100%;
+  max-width: 93.75rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.gallery-group{
+  position: relative;
+  width: 100%;
+  max-width: 93.75rem;
+  margin: 2rem auto;
+  border-radius: 1.875rem;
+  overflow: hidden;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery-group::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 20%,
+      black 80%,
+      transparent 100%
+    ),
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+  -webkit-mask-composite: intersect;
+  mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 20%,
+      black 80%,
+      transparent 100%
+    ),
+    linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-composite: intersect;
+
+  background: #bbdbd2; 
+
+}
+
+.gallery-group > *{
+  z-index: 1;
+  width: 100%;
+}
 
 .gallery-box-przewodnik{
   position: relative;
@@ -813,8 +876,17 @@ body {
   object-fit: contain !important;
 }
 
+.gallery-group-title{
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+}
+
 .gallery-title {
   margin-bottom: 1.5rem;
+}
+
+.odstep{
+  margin-bottom: 5rem;
 }
 
 /* --- NOWA STRUKTURA GALERII Z WRAPPEREM --- */
@@ -994,7 +1066,6 @@ body {
   /* height: 79vh; */
 }
 
-
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
@@ -1025,6 +1096,7 @@ body {
   border-radius: 2rem;
   display: block;
 }
+
 
 .arrow {
   position: absolute;
@@ -1072,6 +1144,8 @@ flex-direction: column;
 margin-top: 8rem;
 }
 
+
+
 .obok-siebie{
   display: flex;
   flex-direction: row;
@@ -1115,6 +1189,7 @@ margin-top: 8rem;
   /* height: 50vh; */
   margin-bottom: 5rem;
 }
+
 
 .section__pic-container {
   height: 400px;

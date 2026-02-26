@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./assets/MK.png">
+  <title>Portfolio Marta Kotewicz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+    <div id="sd-container">
+  <div class="arrow"></div>
+  <div class="arrow"></div>
+</div>
+
+  <!-- Nawigacja desktopowa -->
+  <nav id="desktop-nav">
+<a href="index.html" id="logo-link">
+  <div id="logo"></div>
+</a>
+    <div class="right-side">
+      <ul class="nav-links">
+        <li><a href="uxui.html">Projektowanie&nbsp;UX/UI</a></li>
+        <li><a href="proj.html">Grafika&nbsp;projektowa</a></li>
+        <li><a href="serigraphy.html">Serigrafia</a></li>
+        <li><a href="foto.html">Fotografia</a></li>
+        <li><a href="about.html">O&nbsp;mnie</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <div id="buttony">
+        <a href="uxui.html"><img src="./assets/button-pl.svg" alt="Polski" width="24" height="24"></a>
+        <a href="uxui-en.html"><img src="./assets/button-eng.svg" alt="English" width="24" height="24"></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Nawigacja mobilna -->
+  <nav id="hamburger-nav">
+    <a href="index.html" id="logo-link">
+  <div id="logo-hamburger"></div>
+</a>
+    <div class="hamburger-right-side">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="uxui.html" onclick="toggleMenu()">Projektowanie&nbsp;UX/&#8288;UI</a></li>
+          <li><a href="proj.html" onclick="toggleMenu()">Grafika&nbsp;projektowa</a></li>
+          <li><a href="serigraphy.html" onclick="toggleMenu()">Serigrafia</a></li>
+          <li><a href="foto.html" onclick="toggleMenu()">Fotografia</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">O&nbsp;mnie</a></li>
+          <li><a href="kontakt.html" onclick="toggleMenu()">Kontakt</a></li>
+        </ul>
+      </div>
+      <div id="buttony-hamburger">
+        <a href="uxui.html"><img src="./assets/button-pl.svg" alt="Polski" width="24" height="24"></a>
+        <a href="uxui-en.html"><img src="./assets/button-eng.svg" alt="English" width="24" height="24"></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Galerie -->
+<div class="gallery-group">
+  <h2 class="gallery-group-title" style="text-align: center;">Projekt UX/UI - Strona białka dla sportowców</h2>
+  <section class="gallery-section">
+    <div class="odstep">
+      <div class="gallery-content-serce">
+        <h2 class="gallery-title" style="text-align: center;">Analiza przedprojektowa</h2>
+        <div class="gallery-wrapper">
+          <button class="prev">&#10094;</button>
+            <div class="gallery">
+              <div class="gallery-track">
+                <div class="slide"><img src="./assets/PersonaPL_500.jpg" data-full="./assets/PersonaPL_1200.jpg" alt="Opracowanie Persony" data-gallery="analiza"></div>
+                <div class="slide"><img src="./assets/Uzycie_500.jpg" data-full="./assets/Uzycie_1200.jpg" alt="Opracowanie przypadku użycia" data-gallery="analiza"></div>
+                <div class="slide"><img src="./assets/EmpathyMapPL_500.jpg" data-full="./assets/EmpathyMapPL_1200.jpg" alt="Opracowanie mapy empatii" data-gallery="analiza"></div>
+                <div class="slide"><img src="./assets/Decyzje_500.jpg" data-full="./assets/Decyzje_1200.jpg" alt="Opracowanie decyzji projektowych" data-gallery="analiza"></div>
+              </div>
+            </div>
+          <button class="next">&#10095;</button>
+        </div>
+        <p class="gallery-description" style="margin: 1.5rem auto 0 auto; max-width: 45.4rem;">
+            Opracowanie persony, przypadku użycia, mapy empatii oraz określenie decyzji projektowych. Stworzone w programie Figma.
+        </p>
+      </div>
+    </div>
+  </section>
+
+    <section class="gallery-section">
+    <div class="odstep">
+      <div class="gallery-content-mashedup">
+        <h2 class="gallery-title" style="text-align: center;">Low fidelity wireframes</h2>
+        <div class="gallery-wrapper">
+          <button class="prev">&#10094;</button>
+            <div class="gallery">
+              <div class="gallery-track">
+                <div class="slide"><img src="./assets/LoFi_Hero_500.jpg" data-full="./assets/LoFi_Hero_1200.jpg" alt="Low Fidelity wireframes - Landing Page" data-gallery="lofi"></div>
+                <div class="slide"><img src="./assets/LoFi_Products_500.jpg" data-full="./assets/LoFi_Products_1200.jpg" alt="Low Fidelity wireframes - Strona produktu" data-gallery="lofi"></div>
+                <div class="slide"><img src="./assets/LoFi_Experience_500.jpg" data-full="./assets/LoFi_Experience_1200.jpg" alt="Low Fidelity wireframes - Strona opcji produktowych" data-gallery="lofi"></div>
+                <div class="slide"><img src="./assets/LoFi_Reviews_500.jpg" data-full="./assets/LoFi_Reviews_1200.jpg" alt="Low Fidelity wireframes - Strona - opinie" data-gallery="lofi"></div>
+                <div class="slide"><img src="./assets/LoFi_FAQ_500.jpg" data-full="./assets/LoFi_FAQ_1200.jpg" alt="Low Fidelity wireframes - FAQ" data-gallery="lofi"></div>
+              </div>
+            </div>
+          <button class="next">&#10095;</button>
+        </div>
+        <p class="gallery-description" style="text-align: left; margin: 1.5rem auto 0 auto; max-width: 48.2rem;">
+            Szkice funkcjonalności strony. Stworzone w figmie.
+        </p>
+                <p style="font-size: 12px; color: #7c7c7c; padding-top: 0.5rem; margin: 0rem auto 0 auto; max-width: 48.2rem;">
+                Szablony użyte w projekcie: <a style="font-size: 12px; color: #7c7c7c; text-decoration: none;"  href="https://www.figma.com/community/file/1347472132092037504/multipurpose-ecommerce-website-lo-fi-template" target="_blank">"Multipurpose Ecommerce Website Lo-fi Template"</a> by Xperienced licensed under <a style="font-size: 12px; color: #7c7c7c; text-decoration: none;"  href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> / Materials were modified for the purposes of this project.
+                </p>
+      </div>
+    </div>
+  </section>
+
+      <section class="gallery-section">
+    <div class="odstep">
+      <div class="gallery-content-mashedup">
+        <h2 class="gallery-title" style="text-align: center;">High fidelity wireframes</h2>
+        <div class="gallery-wrapper">
+          <button class="prev">&#10094;</button>
+            <div class="gallery">
+              <div class="gallery-track">
+                <div class="slide"><img src="./assets/Hero_500.jpg" data-full="./assets/Hero_1200.jpg" alt="High fidelity wireframes - Landing page" data-gallery="Hifi"></div>
+                <div class="slide"><img src="./assets/Products_500.jpg" data-full="./assets/Products_1200.jpg" alt="High fidelity wireframes - Strona produktu" data-gallery="Hifi"></div>
+                <div class="slide"><img src="./assets/Experience_500.jpg" data-full="./assets/Experience_1200.jpg" alt="High fidelity wireframes - Strona opcji produktowych" data-gallery="Hifi"></div>
+                <div class="slide"><img src="./assets/Reviews_500.jpg" data-full="./assets/Reviews_1200.jpg" alt="High fidelity wireframes - Strona - opinie" data-gallery="Hifi"></div>
+              </div>
+            </div>
+          <button class="next">&#10095;</button>
+        </div>
+        <p class="gallery-description" style="text-align: left; margin: 1.5rem auto 0 auto; max-width: 48.2rem;">
+            Wizualizacja strony stworzona w oparciu o szkice funkcjonalności. Projekt zrealizowany w figmie.
+        </p>
+                <p style="font-size: 12px; color: #7c7c7c; padding-top: 0.5rem;  margin: 0rem auto 0 auto; max-width: 48.2rem;">
+                    Ikony użyte w projekcie: <a style="font-size: 12px; color: #7c7c7c; text-decoration: none;"  href="https://www.figma.com/community/file/1143911270904274171/heroicons" target="_blank">"Heroicons"</a> by Tailwind Labs and Steve Schoger licensed under <a style="font-size: 12px; color: #7c7c7c; text-decoration: none;"  href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> / Materials were modified for the purposes of this project.
+                </p>
+      </div>
+    </div>
+  </section>
+</div>
+      <footer>
+      <p style="margin-bottom: 1rem;">© 2025-2026 Marta Kotewicz. Wszelkie prawa zastrzeżone.</p>
+      <p>Mockupy i inne materiały zewnętrzne wykorzystano zgodnie z ich licencjami.</br> Autor nie rości sobie do nich praw autorskich.</p>
+    </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" aria-hidden="true" role="dialog" aria-label="Podgląd zdjęcia">
+    <button id="lightbox-close" aria-label="Zamknij lightbox">✕</button>
+    <button id="lightbox-prev" class="lb-nav" aria-label="Poprzednie">‹</button>
+    <div class="lb-inner">
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption-wrap">
+        <div id="lightbox-caption"></div>
+        <div id="lightbox-counter"></div>
+      </div>
+    </div>
+    <button id="lightbox-next" class="lb-nav" aria-label="Następne">›</button>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script src="scripts/lottie.js"></script>
+  <script src="scripts/logo.js"></script>
+      <script src="scripts/arrow.js"></script>
+
+</body>
+</html>
