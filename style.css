@@ -257,7 +257,7 @@ nav {
 
 .btn-container1 {
  display: grid;
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(2, max-content);
   justify-content: center;
   gap: 1rem;
 }
