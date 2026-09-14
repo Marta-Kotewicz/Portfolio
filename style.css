@@ -389,6 +389,10 @@ body {
   align-items: center;
 }
 
+.odstep2{
+ margin-top: 1.3rem;
+}
+
 
 .gallery-group{
   position: relative;
@@ -881,8 +885,18 @@ body {
   font-size: 1.8rem;
 }
 
+.gallery-group-titleUX{
+   margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
 .gallery-title {
   margin-bottom: 1.5rem;
+}
+
+.gallery-titleUX{
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .odstep{
@@ -1494,4 +1508,72 @@ footer p {
   #lightbox-caption {
     font-size: 0.9rem;
   }
+}
+
+:root {
+  /* Odległość tytułu od górnej krawędzi ekranu */
+  --gallery-top-offset: 9.375rem;
+
+  /* Odległość tytułu od dolnej krawędzi ekranu przy zamykaniu */
+  --gallery-bottom-offset: 2rem;
+}
+
+
+/* Przycisk z nazwą galerii */
+.gallery-toggle {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 1rem 0;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 0.8rem;
+
+  transition: opacity 0.2s ease;
+
+  /* Miejsce zostawiane nad tytułem */
+  scroll-margin-top: var(--gallery-top-offset);
+}
+
+.gallery-toggle:hover {
+  color: gray !important;
+  text-decoration-color: rgb(181, 181, 181) !important;
+}
+
+
+/* Plus / X */
+.toggle-icon {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+
+  transition: transform 0.3s ease;
+}
+
+
+/* Ukryta galeria */
+.gallery-collapsible {
+  display: none;
+}
+
+
+/* Otwarta galeria */
+.gallery-collapsible.open {
+  display: block;
+}
+
+
+/* Po otwarciu + zmienia się optycznie w × */
+.gallery-toggle[aria-expanded="true"] .toggle-icon {
+  transform: rotate(45deg);
 }

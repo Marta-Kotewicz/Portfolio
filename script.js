@@ -290,7 +290,79 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+document.querySelectorAll('.gallery-toggle').forEach(button => {
 
+  button.addEventListener('click', () => {
+
+    const content = button.nextElementSibling;
+    const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+    // Odczytujemy wartości rem z CSS
+    const rootStyles = getComputedStyle(document.documentElement);
+
+    const topOffset = parseFloat(
+      rootStyles.getPropertyValue('--gallery-top-offset')
+    ) * parseFloat(rootStyles.fontSize);
+
+    const bottomOffset = parseFloat(
+      rootStyles.getPropertyValue('--gallery-bottom-offset')
+    ) * parseFloat(rootStyles.fontSize);
+
+
+    // ==========================
+    // OTWIERANIE
+    // ==========================
+
+    if (!isOpen) {
+
+      button.setAttribute('aria-expanded', 'true');
+      content.classList.add('open');
+
+      setTimeout(() => {
+
+        const buttonPosition =
+          button.getBoundingClientRect().top +
+          window.scrollY;
+
+        window.scrollTo({
+          top: buttonPosition - topOffset,
+          behavior: 'smooth'
+        });
+
+      }, 50);
+
+
+    // ==========================
+    // ZAMYKANIE
+    // ==========================
+
+    } else {
+
+      button.setAttribute('aria-expanded', 'false');
+      content.classList.remove('open');
+
+      setTimeout(() => {
+
+        const buttonRect = button.getBoundingClientRect();
+
+        const targetPosition =
+          window.scrollY +
+          buttonRect.bottom -
+          window.innerHeight +
+          bottomOffset;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+
+      }, 50);
+
+    }
+
+  });
+
+});
 
 
 
