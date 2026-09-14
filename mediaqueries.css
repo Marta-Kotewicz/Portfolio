@@ -44,6 +44,7 @@
 @media screen and (max-width: 75em) {
   #profile{
     height: 73vh;
+    height: fit-content;
   }
   #desktop-nav {
     display: none;
@@ -135,7 +136,7 @@
     margin-left: 0rem !important;
   }
 
-  .gallery-title{
+  .gallery-title, .gallery-group-titleUX, .gallery-titleUX, .gallery-toggle{
     font-size: 1.2rem;
   }
 
